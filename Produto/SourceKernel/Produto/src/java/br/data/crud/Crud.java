@@ -36,7 +36,6 @@ public abstract class Crud<T> {
     public void remove(int codigo) {
         EntityManager em = emf.createEntityManager();
         try {
-            
            java.lang.reflect.ParameterizedType ptipo;
             ptipo = (java.lang.reflect.ParameterizedType)this.getClass().getGenericSuperclass();
             java.lang.reflect.Type tipo = ptipo.getActualTypeArguments()[0];
